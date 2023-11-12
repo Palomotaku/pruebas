@@ -17,7 +17,7 @@
 <body>
     <div class="MenuLogin">
         <div class="DecLog">
-            <img src="../img/logo-stryfix.png" alt="Logo-StryFix">
+            <img src="img/logo-stryfix.png" alt="Logo-StryFix">
             <label>StryFix</label>
         </div>
         <div class="Login">
