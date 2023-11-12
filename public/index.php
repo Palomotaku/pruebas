@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stryfix - Login</title>
-    <link href="api/style.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
     <script src="js/login.js"></script>
 </head>
 <body>
