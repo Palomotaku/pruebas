@@ -10,7 +10,7 @@ if(isset($_POST['enviar'])) {
         $header = "From: noreply@example.com" . "\r\n";
         $header.= "Reply-To: noreply@example.com" . "\r\n";
         $header.= "X-Mailer: PHP/". phpversion();
-        $mail = @mail($corre_, $header);
+        $mail = mail($corre_, $header);
         if ($mail) {
             echo "<h4> LISTO </h4>";
         }
