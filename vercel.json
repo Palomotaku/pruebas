@@ -6,8 +6,8 @@
     },
 
     "builds": [
-        { "src": "index.php", "use":"vercel-php@0.6.0"}
+        { "src": "api/index.php", "use": "vercel-php@0.6.0" },
+        { "src": "public/**", "use": "@vercel/static" }
     ]
-
 
 }
