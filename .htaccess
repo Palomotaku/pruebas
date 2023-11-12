@@ -1,0 +1,15 @@
+
+# HTID:22263897: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:22263897:
+
+
+
+
+
+# HTID:22534179: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www.)?(strifyx.000webhostapp.com)(/)?.*$      [NC]
+RewriteRule .*.(.*)$ http://stryfix [R,NC]
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:22534179:

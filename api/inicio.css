@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: candara;
+}
+
+.LateralMenu{
+    height: 100%;
+    width: 400px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.LateralMenu img{
+    padding: 30px;
+    padding-left: 100px;
+    height: 200px;
+    width: 200px;
+}
+.LateralMenu a{
+    margin-left: 5px;
+    margin-right: 10px;
+    padding: 20px;
+    padding-left: 40px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    text-align: justify;
+}
+.LateralMenu a:hover{
+    color: white;
+    font-weight: bold;
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+.LateralMenu name{
+    color: white;
+    display: block;
+    text-align: justify;
+}
