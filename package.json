@@ -5,6 +5,7 @@
   "main": "index.html",
   "type": "module",
   "dependencies": {
+    "@vercel/postgres": "^0.5.1",
     "abort-controller": "^3.0.0",
     "adal-node": "^0.2.4",
     "async": "^2.6.4",
