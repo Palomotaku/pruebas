@@ -20,7 +20,7 @@
                 $_SESSION['nombre'] = $row['nom_'];
                 $_SESSION['avatar'] = $row['avatar'];
                 
-                header('location: ../public/inicial.php');
+                header('location: public/inicial.php');
             }
             }
         }else{
