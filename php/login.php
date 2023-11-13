@@ -19,7 +19,6 @@
                 $_SESSION['usuario'] = $row['corre_'];
                 $_SESSION['nombre'] = $row['nom_'];
                 $_SESSION['avatar'] = $row['avatar'];
-                $_SESSION['correo'] = $row['corre_'];
                 
                 header('location: ../public/inicial.php');
             }
