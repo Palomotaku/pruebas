@@ -37,7 +37,7 @@
                     <input type="submit" value="Iniciar Sesion">
                 </div>
                 <div class="Register">
-                    No estas registrado? <a href="../registrarse.php">Registrate</a>
+                    No estas registrado? <a href="registrarse.php">Registrate</a>
                 </div>
             </form>
         </div>

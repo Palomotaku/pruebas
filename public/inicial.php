@@ -17,7 +17,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StryFix - Inicio</title>
-    <link href="inicio.css" rel="stylesheet">
+    <link href="css/inicio.css" rel="stylesheet">
     <style>
         .LateralMenu img{
             higth:100px;

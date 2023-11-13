@@ -21,7 +21,7 @@
         echo '
             <script>
                 alert("Correo no disponible");
-                window.location = "../index.php";
+                window.location = "../public/index.php";
             </script>
         ';
         exit;
@@ -34,7 +34,7 @@
         echo '
             <script>
                 alert("Usuario registrado correctamente");
-                window.location = "../index.php";
+                window.location = "../public/index.php";
             </script>
         ';
     }

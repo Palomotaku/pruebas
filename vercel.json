@@ -4,6 +4,8 @@
     "builds": [
         { "src": "/api/index.php", "use": "vercel-php@0.6.0" },
         { "src": "/public/index.php", "use": "vercel-php@0.6.0" },
+        { "src": "/public/inicial.php", "use": "vercel-php@0.6.0" },
+        { "src": "/public/registrarse.php", "use": "vercel-php@0.6.0" },
         { "src": "/public/**", "use": "@vercel/static" },
         { "src": "/php/**", "use": "vercel-php@0.6.0" }
     ],

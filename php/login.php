@@ -21,14 +21,14 @@
                 $_SESSION['avatar'] = $row['avatar'];
                 $_SESSION['correo'] = $row['corre_'];
                 
-                header('location: ../inicial.php');
+                header('location: ../public/inicial.php');
             }
             }
         }else{
             echo '
             <script>
                 alert("Cuenta no existente");
-                window.location = "../index.php";
+                window.location = "../public/index.php";
             </script>
         ';
     }
