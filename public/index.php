@@ -31,7 +31,7 @@
                 </div>
                 <div class="Remember-Forgot">
                     <label><input type="checkbox"> Recordar mi cuenta</label>
-                    <a href="../remember.html">Olvido su Contraseña?</a>
+                    <a href="remember.php">Olvido su Contraseña?</a>
                 </div>
                 <div class="Log-In">
                     <input type="submit" value="Iniciar Sesion">

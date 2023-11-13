@@ -130,7 +130,7 @@
 /*MENU DE REGISTRARSE*/
 .MenuRegister{
     display: flex;
-    background: url(img/fondo2.jpg);
+    background: url(../img/fondo2.jpg);
     height: 100vh;
 }
 .Register-In{

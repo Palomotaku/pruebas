@@ -5,7 +5,7 @@ body{
 }
 .Remember{
     display: flex;
-    background: url(img/fondo2.jpg);
+    background: url(../img/fondo2.jpg);
     height: 100vh;
 }
 .C_Remem{
