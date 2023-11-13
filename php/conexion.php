@@ -1,6 +1,9 @@
 <?php
 
-    $conexion = mysqli_connect("localhost", "id21268848_admin2105", "Jerico:v123", "id21268848_2105servidor_db");
+    $conexion = mysqli_connect("bxr9l2qqbuyh852lu3na-mysql.services.clever-cloud.com", 
+                                "ueqli12irmyfucjv", 
+                                "ueqli12irmyfucjv", 
+                                "bxr9l2qqbuyh852lu3na");
 
     // if($conexion){
     //     echo 'CONEXION EXITO MI KING';
