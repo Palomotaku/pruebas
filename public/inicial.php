@@ -63,7 +63,7 @@
         <a href="#">Inicio</a>
         <a href="#">Perfil</a>
         <a href="#">Configuracion</a>
-        <a href="php/logout.php">Cerrar Sesion</a>
+        <a href="../php/logout.php">Cerrar Sesion</a>
     </nav>
     <main class="LblPrincipal">
         <div>
