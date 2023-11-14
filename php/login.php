@@ -11,14 +11,14 @@
     $valid_login = mysqli_query($conexion, "SELECT * FROM usuario WHERE corre_='$corre_' and contra_='$contra_'");
 
 
-    if ($row = mysqli_fetch_array($valid_login)) {
+    if (mysqli_num_rows($valid_login) > 0){
         $_SESSION['usuario'] = $row['corre_'];
         $_SESSION['nombre'] = $row['nom_'];
         $_SESSION['avatar'] = $row['avatar'];
 
 
         header("location: ../public/inicial.php");
-        exit();
+        exit;
     }else{
         echo'
            <script>
@@ -26,7 +26,7 @@
                window.location = "../public/index.php";
           </script>
         ';
-        exit();
+        exit;
     }
 
     // if($contar == 1) {
