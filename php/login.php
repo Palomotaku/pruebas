@@ -9,12 +9,13 @@
     $contra_ = hash('sha512', $contra_);
 
     $valid_login = mysqli_query($conexion, "SELECT * FROM usuario WHERE corre_='$corre_' and contra_='$contra_'");
-    $contar = mysqli_num_rows($valid_login);
 
 
     if(mysqli_num_rows($valid_login) > 0){
         $row = mysqli_fetch_array($valid_login);
-        $_SESSION['usuario'] = $corre_;
+        $_SESSION['usuario'] = $row['corre_'];
+
+
         header("location: ../public/inicial.php");
         exit();
     }else{
