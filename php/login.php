@@ -12,7 +12,7 @@
 
 
     if (mysqli_num_rows($valid_login) > 0){
-        $_SESSION["USER"] = $corre_;
+        $_SESSION["USER"] = 100;
 
 
         header("location: ../public/inicial.php");
