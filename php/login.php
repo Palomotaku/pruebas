@@ -22,12 +22,12 @@
 
         {
 
-          if($usuario = $row['usuario'] && $contrasena = $row['contrasena'])
+          if($usuario = $row['corre_'] && $contrasena = $row['contra_'])
 
           {
 
-            $_SESSION['usuario'] = $usuario;
-            $_SESSION['id'] = $row['id_use'];
+            $_SESSION['usuario'] = $corre_;
+            $_SESSION['nombre'] = $row['name_'];
 
             header('Location: index.php');
 
