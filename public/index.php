@@ -22,7 +22,7 @@
         </div>
         <div class="Login">
             <h1>Iniciar Sesion</h1>
-            <form action="login.php" method="POST">
+            <form action="../php/login.php" method="POST">
                 <div class="Correo">
                     <input type="text" placeholder="Email" name='corre_' required>
                 </div>

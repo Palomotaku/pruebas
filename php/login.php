@@ -2,7 +2,7 @@
 
     session_start();
 
-    include 'php/conexion.php';
+    include 'conexion.php';
 
     $corre_ = $_POST['corre_'];
     $contra_ = $_POST['contra_'];
@@ -17,13 +17,13 @@
         $_SESSION['avatar'] = $row['avatar'];
 
 
-        header("location: inicial.php");
+        header("location: ../public/inicial.php");
         exit();
     }else{
         echo'
            <script>
                alert("Cuenta no existente");
-               window.location = "index.php";
+               window.location = "../public/index.php";
           </script>
         ';
         exit();
