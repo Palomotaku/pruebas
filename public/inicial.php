@@ -1,5 +1,7 @@
 <?php
     session_start();
+
+    include("login.php");
     $user = $_SESSION["USER"];
 
     echo $user . "<br/>";
