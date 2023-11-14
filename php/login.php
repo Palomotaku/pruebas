@@ -11,6 +11,9 @@
     $valid_login = mysqli_query($conexion, "SELECT * FROM usuario WHERE corre_='$corre_' and contra_='$contra_'");
 
 
+    if(!$valid_login){
+        die("Error en la conexion: ");
+    }
     if (mysqli_num_rows($valid_login) > 0){
         $_SESSION['USER'] = $corre_;
 
