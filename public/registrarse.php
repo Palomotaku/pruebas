@@ -11,7 +11,7 @@
     <div class="MenuRegister">
         <div class="Register-In">
             <h1>Registrar</h1>
-            <form action="../php/registrar.php" action="https://formsubmit.co/francoitalo46hotmail.com" method="POST" class="form_register">
+            <form action="../php/registrar.php" action="https://formsubmit.co/francoitalo4@hotmail.com" method="POST" class="form_register">
                 <div class="Name">
                     <input type="text" placeholder="Nombres" name="nom_" required>
                 </div>
