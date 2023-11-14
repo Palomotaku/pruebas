@@ -1,4 +1,6 @@
 <?php
+    session_start();
+    var_dump($_SESSION['usuario']);
     // session_start();
     // if(!isset($_SESSION['usuario'])){
     //     echo '
@@ -10,6 +12,7 @@
     //     session_destroy();
     //     die();
     // }
+    
 ?>
 <!DOCTYPE html>
 <html lang="es">
