@@ -1,5 +1,6 @@
 <?php
     session_start();
+    include '../php/conexion.php';
     $user = $_SESSION['USER'];
 
     echo $user . "<br/>";

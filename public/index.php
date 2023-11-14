@@ -1,5 +1,6 @@
 <?php
     session_start();
+    include '../php/conexion.php';
     $_SESSION["USER"] = $corre_;
     if(isset($_SESSION['USER'])){
         header("location: inicial.php");
