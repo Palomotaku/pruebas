@@ -2,8 +2,12 @@
     session_start();
 
     if (!isset($_SESSION['usuario'])) {
-        echo '<script>alert("Por favor, inicie sesión - Debug 1");</script>';
-        header("Location: index.php");
+        echo '
+            <script>
+                alert("Iniciar Sesion");
+                window.location = "../public/index.php";
+            </script>
+        ';
         exit();
     }
 
