@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    include 'login.php';
+    include '../php/login.php';
     $user = $_SESSION["USER"];
 
     echo $user . "<br/>";
