@@ -4,9 +4,9 @@
 
     include 'conexion.php';
 
-    $corre_ = $_POST['corre_'];
-    $contra_ = $_POST['contra_'];
-    $contra_ = hash('sha512', $contra_);
+    $corre_ = isset($_POST['corre_']) ? $_POST['corre_'] : '';
+    $contra_ = isset($_POST['contra_']) ? $_POST['contra_'] : '';
+    $contra_ = hash('sha512', $contra_ ?? '');
 
     $valid_login = mysqli_query($conexion, "SELECT * FROM usuario WHERE corre_='$corre_' and contra_='$contra_'");
 
