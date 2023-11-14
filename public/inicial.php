@@ -1,6 +1,12 @@
 <?php
     session_start();
-    var_dump($_SESSION['usuario']);
+
+    if (!isset($_SESSION['usuario'])) {
+        echo '<script>alert("Por favor, inicie sesión - Debug 1");</script>';
+        // Comentar o eliminar la línea de redirección
+        // header("Location: index.php");
+        exit();
+    }
     // session_start();
     // if(!isset($_SESSION['usuario'])){
     //     echo '
