@@ -14,7 +14,7 @@
     if($contar == 1) {
         while($row = mysqli_fetch_array($valid_login)) 
         {
-            if($corre_ = $row['corre_'] && $contra_ = $row['contra_']) 
+            if($corre_ == $row['corre_'] && $contra_ == $row['contra_']) 
             {
                 $_SESSION['usuario'] = $row['corre_'];
                 $_SESSION['nombre'] = $row['nom_'];
