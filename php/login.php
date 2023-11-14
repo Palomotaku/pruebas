@@ -13,6 +13,7 @@
 
 
     if(mysqli_num_rows($valid_login) > 0){
+        $row = mysqli_fetch_array($valid_login);
         $_SESSION['usuario'] = $corre_;
         header("location: ../public/inicial.php");
         exit();
