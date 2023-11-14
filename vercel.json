@@ -3,9 +3,9 @@
 
     "builds": [
         { "src": "/api/index.php", "use": "vercel-php@0.6.0" },
-        { "src": "/public/**", "use": "vercel-php@0.6.0" },
         { "src": "/public/css/**", "use": "@vercel/static" },
         { "src": "/public/img/**", "use": "@vercel/static" },
+        { "src": "/public/**", "use": "vercel-php@0.6.0" },
         { "src": "/php/**", "use": "vercel-php@0.6.0" }
     ],
 
