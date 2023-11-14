@@ -1,15 +1,15 @@
 <?php
     session_start();
 
-    if (!isset($_SESSION['usuario'])) {
-        echo '
-            <script>
-                alert("Iniciar Sesion");
-                window.location = "../public/index.php";
-            </script>
-        ';
-        exit();
-    }
+    // if (!isset($_SESSION['usuario'])) {
+    //     echo '
+    //         <script>
+    //             alert("Iniciar Sesion");
+    //             window.location = "../public/index.php";
+    //         </script>
+    //     ';
+    //     exit();
+    // }
 
 ?>
 <!DOCTYPE html>
