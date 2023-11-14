@@ -1,8 +1,5 @@
 <?php
     session_start();
-    include '../php/conexion.php';
-    $user = $_SESSION['USER'];
-
     echo $user . "<br/>";
 
     // if (!isset($_SESSION['usuario'])) {
