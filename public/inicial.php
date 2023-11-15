@@ -1,6 +1,6 @@
 <?php
 
-    if (!isset($_SESSION['USER'])) {
+    if (!isset($_SESSION['usuario'])) {
         echo '
             <script>
                 alert("Iniciar Sesion");
