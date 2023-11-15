@@ -36,8 +36,5 @@
             </form>
         </div>
     </div>
-    <?php
-    include("mail_reset.php");
-    ?>
 </body>
 </html>
