@@ -27,11 +27,8 @@
             $_SESSION['usuario'] = $row['corre_'];
             $_SESSION['nombre'] = $row['nom_'];
 
-            echo '
-            <script>
-                window.location = "../public/index.php";
-            </script>
-            ';
+            header('location: ../public/inicial.php');
+            exit;
 
           }
 
@@ -44,6 +41,7 @@
                 window.location = "../public/index.php";
             </script>
             ';
+            exit;
     }
 
 
