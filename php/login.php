@@ -31,13 +31,20 @@
             <script>
                 window.location = "../public/index.php";
             </script>
-        ';
+            ';
 
           }
 
         }
         
-      } else { echo 'Los datos ingresados no son correctos'; }
+      } else { 
+        echo '
+            <script>
+                alert("Datos incorrectos");
+                window.location = "../public/index.php";
+            </script>
+            ';
+    }
 
 
 
