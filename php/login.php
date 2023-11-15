@@ -11,7 +11,7 @@
       $contra_ = strip_tags(md5($_POST['contra_']));
       $contra_ = trim(md5($_POST['contra_']));
 
-      $query = mysqli_query($conexion, "SELECT * FROM usuarios WHERE corre_ = '$corre_' AND contra_ = '$contra_'");
+      $query = mysqli_query($conexion, "SELECT * FROM usuario WHERE corre_ = '$corre_' AND contra_ = '$contra_'");
       $contar = mysqli_num_rows($query);
 
       if($contar == 1) 
