@@ -4,12 +4,10 @@
 
     include 'conexion.php';
 
-      $corre_ = strip_tags($_POST['corre_']);
-      $corre_ = trim($_POST['corre_']);
+      $corre_ = $_POST['corre_'];
+      $contra_ = $_POST['contra_'];
+      $contra_ = hash('sha512',$contra_);
 
-
-      $contra_ = strip_tags(md5($_POST['contra_']));
-      $contra_ = trim(md5($_POST['contra_']));
 
       $query = mysqli_query($conexion, "SELECT * FROM usuario WHERE corre_ = '$corre_' AND contra_ = '$contra_'");
       $contar = mysqli_num_rows($query);
@@ -26,7 +24,7 @@
 
           {
 
-            $_SESSION['usuario'] = $corre_;
+            $_SESSION['usuario'] = $row['corre_'];
             $_SESSION['nombre'] = $row['nom_'];
 
             echo '
