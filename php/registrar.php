@@ -9,7 +9,7 @@
     $cel_ = $_POST['cel_'];
 
     //ENCRIPTAR
-    $contra_ = hash('sha512', $contra_);
+    $contra_ = md5($contra_);
 
     $query = "INSERT INTO usuario(nom_, apelli_, corre_, contra_) VALUES('$nom_', '$apelli_', '$corre_', '$contra_')";
 
