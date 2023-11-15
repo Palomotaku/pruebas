@@ -29,7 +29,7 @@
             $_SESSION['usuario'] = $corre_;
             $_SESSION['nombre'] = $row['name_'];
 
-            header('Location: index.php');
+            header('Location: ../public/index.php');
 
           }
 
