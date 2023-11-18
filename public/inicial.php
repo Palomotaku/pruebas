@@ -56,9 +56,9 @@
 </head>
 <body>
     <nav class="LateralMenu">
-        <img src="img/<?php echo $_SESSION['avatar'] ?>" alt="Foto de Perfil">
+        <img src="" alt="Foto de Perfil">
         <button type="file" name="actualizar">Subir avatar</button>
-        <a class="name"> <?php echo ucwords($_SESSION['nombre']); ?> </a>
+        <a class="name"></a>
         <a href="#">Inicio</a>
         <a href="#">Perfil</a>
         <a href="#">Configuracion</a>
