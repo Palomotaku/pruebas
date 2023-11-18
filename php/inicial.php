@@ -1,6 +1,5 @@
 <?php
     session_start();
-    include 'login.php';
     if (!isset($_SESSION['usuario'])) {
         // echo '
         //     <script>
@@ -8,7 +7,6 @@
         //         window.location = "../public/index.php";
         //     </script>
         // ';
-echo $corre_;
         session_destroy();
         die();
     }
