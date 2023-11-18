@@ -6,7 +6,11 @@
     if(isset($_POST["enviar"])){
         session_start();
         $_SESSION['usuario'] = htmlentities($_POST['corre_']);
-        header("location: inicial.php");
+        echo '
+            <script>
+                window.location = "../public/inicial.php";
+            </script>
+        ';
     }
     session_destroy();
 ?>
