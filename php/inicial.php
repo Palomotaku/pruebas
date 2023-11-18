@@ -4,7 +4,7 @@
         echo '
             <script>
                 alert("Iniciar Sesion");
-                window.location = "../public/index.php";
+                window.location = "../php/index.php";
             </script>
         ';
         session_destroy();
