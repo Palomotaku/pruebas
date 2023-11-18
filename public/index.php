@@ -1,18 +1,22 @@
 <?php
-    // session_start();
-    // if(isset($_SESSION['usuario'])){
-    //     header("location: inicial.php");
-    // }
-    if(isset($_POST["enviar"])){
-        session_start();
-        $_SESSION['usuario'] = htmlentities($_POST['corre_']);
+    session_start();
+    if(isset($_SESSION['usuario'])){
         echo '
             <script>
                 window.location = "../public/inicial.php";
             </script>
         ';
     }
-    session_destroy();
+    // if(isset($_POST["enviar"])){
+    //     session_start();
+    //     $_SESSION['usuario'] = htmlentities($_POST['corre_']);
+    //     echo '
+    //         <script>
+    //             window.location = "../public/inicial.php";
+    //         </script>
+    //     ';
+    // }
+    // session_destroy();
 ?>
 
 <!DOCTYPE html>
@@ -32,7 +36,7 @@
         </div>
         <div class="Login">
             <h1>Iniciar Sesion</h1>
-            <form action="" method="POST">
+            <form action="../php/login.php" method="POST">
                 <div class="Correo">
                     <input type="text" placeholder="Email" name='corre_' required>
                 </div>
