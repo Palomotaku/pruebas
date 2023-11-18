@@ -8,6 +8,7 @@
         $_SESSION['usuario'] = htmlentities($_POST['corre_']);
         header("location: inicial.php");
     }
+    session_destroy();
 ?>
 
 <!DOCTYPE html>
