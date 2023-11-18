@@ -3,6 +3,11 @@
     if(isset($_SESSION['usuario'])){
         header("location: inicial.php");
     }
+    if(isset($_POST["enviar"])){
+        session_start();
+        $_SESSION['usuario'] = htmlentities($_POST['corre_']);
+        header("location: inicial.php");
+    }
 ?>
 
 <!DOCTYPE html>
@@ -34,7 +39,7 @@
                     <a href="remember.php">Olvido su Contraseña?</a>
                 </div>
                 <div class="Log-In">
-                    <input type="submit" value="Iniciar Sesion">
+                    <input type="submit" value="Iniciar Sesion" name="enviar">
                 </div>
                 <div class="Register">
                     No estas registrado? <a href="registrarse.php">Registrate</a>
