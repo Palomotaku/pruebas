@@ -22,7 +22,7 @@
 
             echo '
             <script>
-                window.location = "../public/inicial.php";
+                window.location = "../php/inicial.php";
             </script>
             ';
           }
@@ -31,9 +31,9 @@
         echo '
             <script>
                 alert("Datos incorrectos");
-                window.location = "../public/index.php";
+                window.location = "../php/index.php";
             </script>
             ';
     }
-    
+
 ?>

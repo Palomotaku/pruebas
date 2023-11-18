@@ -3,7 +3,7 @@
     if(isset($_SESSION['usuario'])){
         echo '
             <script>
-                window.location = "../public/inicial.php";
+                window.location = "../php/inicial.php";
             </script>
         ';
     }
@@ -15,7 +15,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stryfix - Login</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../public/css/style.css" rel="stylesheet">
     <script src="js/login.js"></script>
 </head>
 <body>
@@ -26,9 +26,9 @@
         </div>
         <div class="Login">
             <h1>Iniciar Sesion</h1>
-            <form action="../php/login.php" method="POST">
+            <form action="login.php" method="POST">
                 <div class="Correo">
-                    <input type="text" placeholder="Email" name='corre_' required>
+                    <input type="email" placeholder="Email" name='corre_' required>
                 </div>
                 <div class="Password">
                     <input type="password" placeholder="Contraseña" name='contra_' required>
