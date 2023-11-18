@@ -1,5 +1,6 @@
 <?php
     session_start();
+    include 'conexion.php';
     if(isset($_SESSION['usuario'])){
         echo '
             <script>
@@ -26,7 +27,7 @@
         </div>
         <div class="Login">
             <h1>Iniciar Sesion</h1>
-            <form action="login.php" method="POST">
+            <form action="" method="POST">
                 <div class="Correo">
                     <input type="email" placeholder="Email" name='corre_' required>
                 </div>
@@ -44,6 +45,43 @@
                     No estas registrado? <a href="registrarse.php">Registrate</a>
                 </div>
             </form>
+<?php
+if(isset($_POST['enviar'])){
+    
+    $corre_ = $_POST['corre_'];
+    $contra_ = $_POST['contra_'];
+    $contra_ = hash('sha512',$contra_);
+
+
+    $query = mysqli_query($conexion, "SELECT * FROM usuario WHERE corre_ = '$corre_' AND contra_ = '$contra_'");
+    $contar = mysqli_num_rows($query);
+
+    if($contar == 1){
+      while($row=mysqli_fetch_array($query))
+      {
+        if($corre_ = $row['corre_'] && $contra_ = $row['contra_'])
+        {
+          $_SESSION['usuario'] = $row['corre_'];
+          $_SESSION['nombre'] = $row['nom_'];
+
+          echo '
+          <script>
+              window.location = "../php/inicial.php";
+          </script>
+          ';
+        }
+        }     
+    } else { 
+      echo '
+          <script>
+              alert("Datos incorrectos");
+              window.location = "../php/index.php";
+          </script>
+          ';
+  }
+  
+}
+?>
         </div>
     </div>
 </body>
