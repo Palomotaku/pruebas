@@ -1,8 +1,8 @@
 <?php
-    session_start();
-    if(isset($_SESSION['usuario'])){
-        header("location: inicial.php");
-    }
+    // session_start();
+    // if(isset($_SESSION['usuario'])){
+    //     header("location: inicial.php");
+    // }
     if(isset($_POST["enviar"])){
         session_start();
         $_SESSION['usuario'] = htmlentities($_POST['corre_']);
