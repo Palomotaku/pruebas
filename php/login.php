@@ -20,7 +20,7 @@
 
         {
 
-          if($usuario = $row['corre_'] && $contrasena = $row['contra_'])
+          if($corre_ = $row['corre_'] && $contra_ = $row['contra_'])
 
           {
 
