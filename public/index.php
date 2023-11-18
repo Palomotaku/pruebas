@@ -7,16 +7,6 @@
             </script>
         ';
     }
-    // if(isset($_POST["enviar"])){
-    //     session_start();
-    //     $_SESSION['usuario'] = htmlentities($_POST['corre_']);
-    //     echo '
-    //         <script>
-    //             window.location = "../public/inicial.php";
-    //         </script>
-    //     ';
-    // }
-    // session_destroy();
 ?>
 
 <!DOCTYPE html>
