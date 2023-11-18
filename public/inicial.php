@@ -2,7 +2,7 @@
 
     
     session_start();
-    include '../php/login.php';
+    include 'conexion.php';
     if (!isset($_SESSION['usuario'])) {
         // echo '
         //     <script>
