@@ -1,7 +1,8 @@
 <?php
 
-    include '../php/login.php';
+    
     session_start();
+    include '../php/login.php';
     if (!isset($_SESSION['usuario'])) {
         // echo '
         //     <script>
