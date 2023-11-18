@@ -7,6 +7,7 @@
                 window.location = "../php/inicial.php";
             </script>
         ';
+        session_destroy();
     }
 ?>
 
@@ -47,7 +48,7 @@
             </form>
 <?php
 if(isset($_POST['enviar'])){
-    
+
     $corre_ = $_POST['corre_'];
     $contra_ = $_POST['contra_'];
     $contra_ = hash('sha512',$contra_);
