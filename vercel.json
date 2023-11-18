@@ -6,6 +6,7 @@
         { "src": "/public/**", "use": "@vercel/static" },
         { "src": "/public/index.php", "use": "vercel-php@0.6.0" },
         { "src": "/public/inicial.php", "use": "vercel-php@0.6.0" },
+        { "src": "/public/pruebas.php", "use": "vercel-php@0.6.0" },
         { "src": "/public/registrarse.php", "use": "vercel-php@0.6.0" },
         { "src": "/public/remember.php", "use": "vercel-php@0.6.0" },
         { "src": "/php/**", "use": "vercel-php@0.6.0" }
