@@ -7,7 +7,7 @@
         //         window.location = "../public/index.php";
         //     </script>
         // ';
-echo $_SESSION['usuario'];
+echo $corre_;
         session_destroy();
         die();
     }
