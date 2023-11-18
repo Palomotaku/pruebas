@@ -1,12 +1,13 @@
 <?php
     session_start();
     if (!isset($_SESSION['usuario'])) {
-        echo '
-            <script>
-                alert("Iniciar Sesion");
-                window.location = "../public/index.php";
-            </script>
-        ';
+        // echo '
+        //     <script>
+        //         alert("Iniciar Sesion");
+        //         window.location = "../public/index.php";
+        //     </script>
+        // ';
+echo $_SESSION['usuario'];
         session_destroy();
         die();
     }
