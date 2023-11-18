@@ -7,9 +7,9 @@
                 window.location = "../public/index.php";
             </script>
         ';
-        exit();
+        session_destroy();
+        die();
     }
-
 ?>
 <!DOCTYPE html>
 <html lang="es">
