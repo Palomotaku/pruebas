@@ -70,6 +70,7 @@ if(isset($_POST['enviar'])){
               window.location = "../php/inicial.php";
           </script>
           ';
+          exit();
         }
         }     
     } else { 
@@ -79,6 +80,7 @@ if(isset($_POST['enviar'])){
               window.location = "../php/index.php";
           </script>
           ';
+          exit();
   }
   
 }
