@@ -7,6 +7,7 @@
                 window.location = "../php/inicial.php";
             </script>
         ';
+        session_destroy();
     }
 ?>
 
