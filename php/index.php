@@ -67,7 +67,7 @@ if(isset($_POST['enviar'])){
 
           echo '
           <script>
-              window.location = "../php/inicial.php";
+              alert($_SESSION['usuario']);
           </script>
           ';
           exit();
