@@ -31,7 +31,7 @@
                     <input type="submit" value="Registrarse" name="enviar">
                 </div>
                 <div class="Register">
-                    Ya tienes cuenta? <a href="index.php">Iniciar sesion</a>
+                    Ya tienes cuenta? <a href="../php/index.php">Iniciar sesion</a>
                 </div>
             </form>
         </div>

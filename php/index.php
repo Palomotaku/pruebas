@@ -43,7 +43,7 @@
                     <input type="submit" value="Iniciar Sesion" name="enviar">
                 </div>
                 <div class="Register">
-                    No estas registrado? <a href="registrarse.php">Registrate</a>
+                    No estas registrado? <a href="../public/registrarse.php">Registrate</a>
                 </div>
             </form>
 <?php
